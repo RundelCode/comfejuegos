@@ -23,9 +23,9 @@ export default function Home() {
             <Image className={styles.illustration} src={niña2} alt="Kid"></Image>
             <h2>Juego De Memoria</h2>
           </div>
-          <div onClick={()=> redirect("PiedraPapeloTijeras")} className={styles.option} style={{backgroundColor: "#a6cadd"}}>
+          <div onClick={()=> redirect("Ordenar")} className={styles.option} style={{backgroundColor: "#a6cadd"}}>
             <Image className={styles.illustration} src={niño1} alt="Kid"></Image>
-            <h2>Piedra Papel o Tijeras</h2>
+            <h2>Ordena la palabra</h2>
           </div>
           <div onClick={()=> redirect("Adivina")} className={styles.option} style={{backgroundColor: "#d798e7"}}>
             <Image className={styles.illustration} src={niña1} alt="Kid"></Image>

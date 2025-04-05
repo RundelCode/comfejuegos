@@ -1,0 +1,156 @@
+.page {
+  width: 100%;
+  min-height: 100vh;
+  background-image: url('../../../public/Images/Background.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.card {
+  width: 40%;
+  min-height: 60vh;
+  background-color: #f9f5f5;
+  box-shadow: 0px 1px 6px 1px #00000020;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 20px;
+  padding-bottom: 40px;
+  align-items: center;
+  gap: 10px;
+}
+
+.titulo {
+  color: #77574A;
+  font-size: 2.5rem;
+  text-align: center;
+}
+
+.zona {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  align-items: center;
+  width: 100%;
+    
+}
+
+.letras, .respuesta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  justify-content: center;
+}
+
+.letra {
+  font-size: 2rem;
+  background-color: #FFE082;
+  color: #4E342E;
+  border: 2px solid #FFD54F;
+  border-radius: 10px;
+  padding: 15px 20px;
+  cursor: pointer;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+  transition: transform 0.2s ease;
+}
+
+.letra:hover {
+  transform: scale(1.1);
+  background-color: #FFD54F;
+}
+
+.letraSeleccionada {
+  font-size: 2rem;
+  background-color: #A5D6A7;
+  color: #1B5E20;
+  padding: 15px 20px;
+  border-radius: 10px;
+  border: 2px solid #81C784;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+.modal{
+  background-color: #E8F5E9;
+  border: 2px solid #81C784;
+  border-radius: 15px;
+  padding: 20px 30px;
+  text-align: center;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+.modal p {
+  font-size: 2rem;
+  color: #43A047;
+  margin-bottom: 15px;
+}
+
+.modal button {
+  background-color: #6BA09D;
+  color: white;
+  border: none;
+  border-radius: 20px;
+  padding: 10px 20px;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+.modal button:hover {
+  background-color: #508684;
+  transition: 0.3s;
+}
+
+
+.modalError {
+  background-color: #f5e8e8;
+  border: 2px solid #c78181;
+  border-radius: 15px;
+  padding: 20px 30px;
+  text-align: center;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+.buttons{
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.buttons button{
+  cursor: pointer;
+  width: 49%;
+  height: 40px;
+  font-weight: bold;
+  border: none;
+  background-color: #6BA09D;
+  color: #FFFFFF;
+  border-radius: 20px;
+  transition: .5s;
+}
+
+.buttons button:hover{
+  background-color: #508684;
+  transition: .5s;
+}
+
+/* Responsive */
+@media (max-width: 500px) {
+  .letra, .letraSeleccionada {
+    font-size: 1.5rem;
+    padding: 10px 14px;
+  }
+
+  .card{
+    width: 80%;
+    min-height: 40vh;
+  }
+
+  .modal p {
+    font-size: 1.5rem;
+  }
+}
