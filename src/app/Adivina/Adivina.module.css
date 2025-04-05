@@ -110,9 +110,9 @@
     height: auto;
     gap: 10px;
     margin-top: 20px;
-  }
-  
-  .buttonSection button {
+}
+
+.buttonSection button {
     width: 49%;
     height: 40px;
     background-color: #6BA09D;
@@ -121,9 +121,18 @@
     border-radius: 20px;
     cursor: pointer;
     font-weight: bold;
-  }
-  
-  .buttonSection button:hover {
+}
+
+.buttonSection button:hover {
     background-color: #508684;
     transition: .5s;
-  }
+}
+
+@media (max-width: 1024px) {
+    .card{
+        width: 80%;
+    }
+    .modalContent{
+        width: 80%;
+    }
+}

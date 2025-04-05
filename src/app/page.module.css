@@ -9,14 +9,14 @@
   background-image: url('../../public/Images/Background.png');
   background-size: cover;
   background-repeat: no-repeat;
-  background-position: center right;
+  background-position: center center;
   padding: 20px;
   box-sizing: border-box;
 }
 
 .page h1 {
   color: #77574A;
-  font-size: 2.5rem;
+  font-size: 3rem;
   text-align: center;
 }
 
@@ -60,8 +60,7 @@
 
 .illustration {
   width: auto;
-  height: 60%;
-  max-height: 180px;
+  height: 70%;
 }
 
 /* Media Queries */
@@ -71,17 +70,17 @@
   }
 
   .option h2 {
-    font-size: 1.2rem;
+    font-size: 1.5rem;
   }
 
   .illustration {
-    max-height: 140px;
+    max-height: 200px;
   }
 }
 
 @media (max-width: 480px) {
   .page h1 {
-    font-size: 2rem;
+    font-size: 2.5rem;
   }
 
   .options {
