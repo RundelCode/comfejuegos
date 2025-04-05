@@ -84,7 +84,7 @@ export default function AdivinaPage() {
                     ))}
                 </div>
 
-                <form onSubmit={handleSubmit} className={styles.form}>
+                <form onSubmit={handleSubmit} className={styles.form} autoComplete="off" translate="no">
                     <input
                         type="text"
                         maxLength={1}
@@ -93,6 +93,8 @@ export default function AdivinaPage() {
                         className={styles.inputLetra}
                         placeholder='Letra'
                         autoFocus
+                        autoComplete="off"
+                        translate="no"
                     />
                     <button type="submit" className={styles.verificar}>Verificar</button>
                 </form>
